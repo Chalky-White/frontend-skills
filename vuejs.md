@@ -1,7 +1,7 @@
 # VUE.JS
 
 
-## Utiliser vue.js  
+## Mettre en place un projet vue.js
 
 2 méthodes : création manuelle ou avec le Vue-CLI
 
@@ -37,8 +37,41 @@ Initialiser vue.js grâce à la variable ___vue___ dans le ___fichier  js___ :
 Il peut être utile de nettoyer le cache si d'autres projets s'y trouvent
 ``sudo npm cache clean --force``
 
-Pour lancer l'interface dans le navigateur
+Pour lancer l'interface de création du projet dans le navigateur
 ``vue ui``
+
+## __Organisation d'un projet__
+
+__App.vue__ : fichier principal qui englobe tous les composants de l’application. On y retrouve trois sections :  `<template> `, `<script>` et `<style>` qui permettent respectivement de mettre du code HTML (le template), le code JavaScript (les données, les méthodes, les événements…) et le code CSS
+
+__index.html__ est quand à lui le point d’entrée de l’application. Il comporte uniquement le boilerplate html de base ainsi qu’une div avec l’id App qui nous servira de point de départ du code de l’application
+
+__main.js__ qui est le fichier “racine” de l’application. C’est lui qui va faire le lien entre la vue et le modèle dans notre cas (Vue.js utilise le MVVM).
+
+
+Les dépendances Webpack :  elles sont installées de manière totalement transparente grâce au client vue. Elles nous permettent de séparer la définition même d’un composant dans un fichier javascript dédié ce qui nous permet d’avoir notre style, template et js dans un même fichier
+
+### Segmenter une vue / un composant
+
+Initialement le fichier .vue peut accueillir le style et le javascript. La bonne pratique préconise de créer un dossier dédié et d'y placer le code séparé de la manière suivante : 
+- .vue
+- .js
+- .css
+- .md
+- .spec.ts
+...
+
+Il sera important de déplacer le code de style et de js dans les fichiers idoines, tout en indiquant un lien au fichier .vue :
+
+```js
+<script src="./home.js"></script>
+
+<style scoped lang="scss" src="./home.scss"></style>
+```
+
+## Utiliser un component 
+
+
 
 
 ## Afficher des variables 
@@ -46,8 +79,8 @@ Pour lancer l'interface dans le navigateur
 
 Les variables sont utilisées à l'intérieur de l'objet ___data___ qui va contenir toutes les propriétés. 
 
-``` javascript
-js
+``` js
+
  new Vue({
     el: '#elementHtml' ,
     data: {
@@ -102,20 +135,6 @@ this.title = this.title.split('').reverse().join('');
 
 
 Le routeur est la partie qui synchronise la vue actuellement affichée avec le contenu de la barre d'adresse du navigateur.
-
-Il est conseillé de créer un dossier ``views`` dans le dossier ``src`` , lui même composé d'un dossier par page. Pour chaque page on aura un fichier `.vue`, un fichier ``.js`` et un fichier ``.css``.
-
-Afin de lier ces pages au projet, il faut utiliser le `vue-router` , qui permettra égalemement de définir l'architecture.
-
-Pour l'installer, lancer la commande `npm install vue-router` 
-
-__OU__ 
-
-inclure Vue Router en utilisant une balise script
-```
- <script src="https://unpkg.com/vue-router"></script> 
-
- ```
 
 ### Dans le fichier router.js
 

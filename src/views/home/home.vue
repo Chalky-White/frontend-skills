@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
+    <Header></Header>
     <h1>{{ msg }}</h1>
+    <HelloWorld />
 
     <p>
       Algorithmie, HTML, CSS, Javascript et Vue.js
@@ -8,8 +10,8 @@
     <br />
     <img alt="Transmet" src="/src/assets/transmetropolitan.jpg" />
 
-    <div class="row">
-      <div class="col-xs-2 col-sm-2 col-sm-2">
+    <div class="row ">
+      <div class="col-xs-1 col-sm-1">
         <router-link :to="{ name: 'Algo' }">
           <h3>Algorithmie</h3>
         </router-link>
@@ -37,8 +39,8 @@
         >
       </div>
 
-      <div class="col-xs-2 col-sm-2">
-        <h3>HTML</h3>
+      <div class="col-xs-1 col-sm-1">
+        <router-link :to="{ name: 'Html' }"><h3>HTML</h3></router-link>
 
         <a
           href="https://developer.mozilla.org/fr/docs/Web/HTML"
@@ -66,7 +68,7 @@
         >
       </div>
 
-      <div class="col-xs-2 col-sm-2">
+      <div class="col-xs-1 col-sm-1">
         <h3>CSS</h3>
         <a
           href="https://jaetheme.com/blog/flexbox/"
@@ -93,7 +95,7 @@
         >
       </div>
 
-      <div class="col-xs-2 col-sm-2">
+      <div class="col-xs-1 col-sm-1">
         <h3>JavaScript</h3>
 
         <a
@@ -139,7 +141,7 @@
         >
       </div>
 
-      <div class="col-xs-2 col-sm-2">
+      <div class="col-xs-1 col-sm-1">
         <h3>Vue.js</h3>
 
         <a
@@ -168,8 +170,29 @@
           </button></a
         >
       </div>
-      <div class="col-xs-2 col-sm-2">
+      <div class="col-xs-1 col-sm-1">
         <h3>Conception</h3>
+
+        <a
+          href="https://medium.com/@owayalex/programmation-fonctionnelle-1-les-3-grands-principes-2e1d948fd205"
+          target="_blank"
+          rel="noopener"
+        >
+          <button type="button" class="btn btn-info">
+            La programmation fonctionnelle
+          </button></a
+        >
+        <a
+          href="https://dev.to/pluralsight/my-5-favorite-software-design-principles-4ech"
+          target="_blank"
+          rel="noopener"
+          ><button type="button" class="btn btn-secondary">
+            Cinq principes de conception
+          </button></a
+        >
+      </div>
+      <div class="col-xs-1 col-sm-1">
+        <h3>UI</h3>
 
         <a
           href="https://medium.com/@owayalex/programmation-fonctionnelle-1-les-3-grands-principes-2e1d948fd205"
