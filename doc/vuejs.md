@@ -165,3 +165,40 @@ export default new Router({
 
 ### Dans le fichier main.js
 
+
+## Props et Events
+
+Les props permettent à un composant parent d'envoyer des données ou des méthodes à un composant enfant. 
+
+![alt text](propsevents.png "Title")
+
+
+__Attention : Elles ne peuvent être modifiées que par le composant parent, elles ne peuvent pas être modifiées
+dans le composant enfant__
+
+
+
+Les events permettent la même chose d'un composant enfant vers un composant parent
+
+## Le Store VueX
+
+##  LIfecycle d'un composant
+
+Created > Mounted > Updated > Destroyed
+
+Computed : liste de méthodes calculées une seule et unique fois lorsque le composant est dans le hook (état) Created
+
+Mounted : fonction appelée lorsque le composant est monté
+
+
+### Tester l'existence d'une variable
+
+```js
+testExist () {
+      if (this.myVar === !this.myVar) { // en écrivant !this.myVar on teste le undefined et le null de celle_ci
+        return 'Non ma variable n\'existe pas'
+      } else {
+        return 'Ma variable existe'
+      }
+```
+

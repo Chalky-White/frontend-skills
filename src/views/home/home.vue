@@ -8,10 +8,10 @@
       Algorithmie, HTML, CSS, Javascript et Vue.js
     </p>
     <br />
-    <img alt="Transmet" src="/src/assets/transmetropolitan.jpg" />
+    <img alt="Transmet" src="../../assets/transmetropolitan.jpg" />
 
     <div class="row ">
-      <div class="col-xs-1 col-sm-1">
+      <div class="col-xs-2 col-sm-2">
         <router-link :to="{ name: 'Algo' }">
           <h3>Algorithmie</h3>
         </router-link>
@@ -39,7 +39,7 @@
         >
       </div>
 
-      <div class="col-xs-1 col-sm-1">
+      <div class="col-xs-2 col-sm-2">
         <router-link :to="{ name: 'Html' }"><h3>HTML</h3></router-link>
 
         <a
@@ -68,7 +68,7 @@
         >
       </div>
 
-      <div class="col-xs-1 col-sm-1">
+      <div class="col-xs-2 col-sm-2">
         <h3>CSS</h3>
         <a
           href="https://jaetheme.com/blog/flexbox/"
@@ -95,7 +95,7 @@
         >
       </div>
 
-      <div class="col-xs-1 col-sm-1">
+      <div class="col-xs-2 col-sm-2">
         <h3>JavaScript</h3>
 
         <a
@@ -141,7 +141,7 @@
         >
       </div>
 
-      <div class="col-xs-1 col-sm-1">
+      <div class="col-xs-2 col-sm-2">
         <h3>Vue.js</h3>
 
         <a
@@ -170,7 +170,7 @@
           </button></a
         >
       </div>
-      <div class="col-xs-1 col-sm-1">
+      <div class="col-xs-2 col-sm-2">
         <h3>Conception</h3>
 
         <a
@@ -191,7 +191,7 @@
           </button></a
         >
       </div>
-      <div class="col-xs-1 col-sm-1">
+      <div class="col-xs-2 col-sm-2">
         <h3>UI</h3>
 
         <a
