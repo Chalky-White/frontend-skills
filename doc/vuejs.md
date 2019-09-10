@@ -202,3 +202,6 @@ testExist () {
       }
 ```
 
+## Les Helpers en javascript
+
+Ces fichiers servent à mettre à disposition du projet des méthodes de calcul ou de manipulation (de mécaniques en somme)
