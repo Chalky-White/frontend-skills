@@ -165,8 +165,9 @@ export default new Router({
 
 ### Dans le fichier main.js
 
+## Les propriétés de composants
 
-## Props et Events
+### Props et Events
 
 Les props permettent à un composant parent d'envoyer des données ou des méthodes à un composant enfant. 
 
@@ -175,6 +176,10 @@ Les props permettent à un composant parent d'envoyer des données ou des métho
 
 __Attention : Elles ne peuvent être modifiées que par le composant parent, elles ne peuvent pas être modifiées
 dans le composant enfant__
+
+### Data 
+
+ Le data est une fonction qui retourne un objet qui contient des valeurs
 
 
 
