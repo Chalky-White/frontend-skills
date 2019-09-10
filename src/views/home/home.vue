@@ -2,13 +2,11 @@
   <div class="hello">
     <Header></Header>
     <h1>{{ msg }}</h1>
-    <HelloWorld />
-
     <p>
       Algorithmie, HTML, CSS, Javascript et Vue.js
     </p>
     <br />
-    <img alt="Transmet" src="../../assets/transmetropolitan.jpg" />
+    <img alt="Transmetropolitan" src="../../assets/transmetropolitan.png" />
 
     <div class="row ">
       <div class="col-xs-2 col-sm-2">

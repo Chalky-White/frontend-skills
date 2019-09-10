@@ -1,15 +1,27 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link>
+      <HomeButton />
     </div>
-    <HelloWorld />
+    <router-link to="/">Home</router-link>
     <router-view></router-view>
+    <SubjectButton :title="algo" />
+
   </div>
 </template>
 
-<script></script>
+<script>
+import HomeButton from "./components/HomeButton.vue";
+import SubjectButton from "./components/SubjectButton.vue";
 
+export default {
+  name: "app",
+  components: {
+    HomeButton,
+    SubjectButton
+  }
+};
+</script>
 <style lang="scss">
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
