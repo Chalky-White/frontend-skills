@@ -210,3 +210,21 @@ testExist () {
 ## Les Helpers en javascript
 
 Ces fichiers servent à mettre à disposition du projet des méthodes de calcul ou de manipulation (de mécaniques en somme)
+
+## Prototype
+
+IL sagit de l'élément en dessous un élément (object ou tableau) comparable à une classe qui permet d'avoir accès des méthodes natives (entre autres)
+relatives au type de l'élément
+
+ 
+# VueX
+
+Vuex est un gestionnaire d'état (« state management pattern ») et une bibliothèque pour des applications Vue.js. 
+Il sert de zone de stockage de données centralisée pour tous les composants dans une application, avec des règles pour s'assurer que l'état ne puisse subir de mutations que d'une manière prévisible. Il s'intègre également avec l'extension officielle de Vue afin de fournir des fonctionnalités avancées comme de la visualisation d'état dans le temps et des exports et imports d’instantanés (« snapshot ») d'état.
+
+## State
+
+Vuex utilise un arbre d'état unique, c'est-à-dire que cet unique objet contient tout l'état au niveau applicatif et sert de « source de vérité unique ». Cela signifie également que vous n'aurez qu'un seul store pour chaque application. Un arbre d'état unique rend rapide la localisation d'une partie spécifique de l'état et permet de facilement prendre des instantanés de l'état actuel de l'application à des fins de débogage.
+
+## Mutations
+
