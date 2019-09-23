@@ -165,110 +165,13 @@ export default new Router({
 
 ### Dans le fichier main.js
 
-## Les propriétés de composants
 
-### Props et Events
+## Props et Events
 
-Les props permettent à un composant parent d'envoyer des données ou des méthodes à un composant enfant. 
-
-![alt text](propsevents.png "Title")
-
-
-__Attention : Elles ne peuvent être modifiées que par le composant parent, elles ne peuvent pas être modifiées
-dans le composant enfant__
-
-### Data 
-
- Le data est une fonction qui retourne un objet qui contient des valeurs
-
-
+Les props permettent à un composant parent d'envoyer des données ou des méthodes à un composant enfant
 
 Les events permettent la même chose d'un composant enfant vers un composant parent
 
+
+
 ## Le Store VueX
-
-##  LIfecycle d'un composant
-
-Created > Mounted > Updated > Destroyed
-
-Computed : liste de méthodes calculées une seule et unique fois lorsque le composant est dans le hook (état) Created
-
-Mounted : fonction appelée lorsque le composant est monté
-
-
-### Tester l'existence d'une variable
-
-```js
-testExist () {
-      if (this.myVar === !this.myVar) { // en écrivant !this.myVar on teste le undefined et le null de celle_ci
-        return 'Non ma variable n\'existe pas'
-      } else {
-        return 'Ma variable existe'
-      }
-```
-
-## Les Helpers en javascript
-
-Ces fichiers servent à mettre à disposition du projet des méthodes de calcul ou de manipulation (de mécaniques en somme)
-
-## Prototype
-
-Il sagit de l'élément en dessous un élément (object ou tableau) comparable à une classe qui permet d'avoir accès des méthodes natives (entre autres)
-relatives au type de l'élément
-
- 
-# VueX
-
-Vuex est un gestionnaire d'état (« state management pattern ») et une bibliothèque pour des applications Vue.js. 
-Il sert de zone de stockage de données centralisée pour tous les composants dans une application, avec des règles pour s'assurer que l'état ne puisse subir de mutations que d'une manière prévisible. Il s'intègre également avec l'extension officielle de Vue afin de fournir des fonctionnalités avancées comme de la visualisation d'état dans le temps et des exports et imports d’instantanés (« snapshot ») d'état.
-
-## State
-
-Vuex utilise un arbre d'état unique, c'est-à-dire que cet unique objet contient tout l'état au niveau applicatif et sert de « source de vérité unique ». Cela signifie également que vous n'aurez qu'un seul store pour chaque application. Un arbre d'état unique rend rapide la localisation d'une partie spécifique de l'état et permet de facilement prendre des instantanés de l'état actuel de l'application à des fins de débogage.
-
-## Mutations
-
-La seule façon de vraiment modifier l'état dans un store Vuex est d'acter une mutation. Les mutations Vuex sont très similaires aux évènements : chaque mutation a un type sous forme de chaine de caractères et un gestionnaire. La fonction de gestion est en charge de procéder aux véritables modifications de l'état, et elle reçoit l'état en premier argument :
-
-```js
-const store = new Vuex.Store({
-  state: {
-    count: 1
-  },
-  mutations: {
-    increment (state) {
-      // muter l'état
-      state.count++
-    }
-  }
-})
-```
-
-## Actions
-
-Les actions sont similaires aux mutations, à la différence que :
-
-    Au lieu de modifier l'état, les actions actent des mutations.
-    Les actions peuvent contenir des opérations asynchrones.
-
-Enregistrons une simple action :
-
-```js
-const store = new Vuex.Store({
-  state: {
-    count: 0
-  },
-  mutations: {
-    increment (state) {
-      state.count++
-    }
-  },
-  actions: {
-    increment (context) {
-      context.commit('increment')
-    }
-  }
-})
-```
-
-Les actions sont déclenchées par la méthode `store.dispatch` :
