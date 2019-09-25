@@ -189,12 +189,17 @@ Les events permettent la même chose d'un composant enfant vers un composant par
 
 ##  LIfecycle d'un composant
 
+
+
 Created > Mounted > Updated > Destroyed
 
-Computed : liste de méthodes calculées une seule et unique fois lorsque le composant est dans le hook (état) Created
+Created : fonction (hook vital)
 
-Mounted : fonction appelée lorsque le composant est monté
+Computed : liste de méthodes calculées une seule et unique fois lorsque le composant est dans le hook (état). Il est modifié que dans le hook du created
 
+Mounted : fonction fonction (hook vital)appelée lorsque le composant est monté
+
+Destroyed : fonction (hook vital)
 
 ### Tester l'existence d'une variable
 
